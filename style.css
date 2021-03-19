@@ -5,8 +5,8 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #EDB5D9;
-    background-color: #050D18;
-    ;
+    background-color: #0C203A;
+    position: relative;
   }
   
   a {
@@ -21,6 +21,10 @@ body {
   
   h1, h2, h3, h4, h5, h6 {
     font-family: "Poppins", sans-serif;
+  }
+
+  .screen-i{
+    display: none;
   }
 
 /*--------------------------------------------------------------
@@ -94,7 +98,7 @@ body {
   
   .sidebar a {
     display: block;
-    color: #050D18;
+    color: #0C203A;
     font-size: 18px;
     padding: 16px;
     text-decoration: none;
@@ -102,12 +106,12 @@ body {
 
    
   .sidebar a:not(:last-child).active {
-    background-color: #050D18;
+    background-color: #0C203A;
     color:  #EDB5D9;
   }
   
   .sidebar a:not(:last-child):hover:not(.active) {
-    background-color: #050D18;
+    background-color: #0C203A;
     color: #EDB5D9;
   }
   
@@ -141,7 +145,8 @@ body {
     .sidebar.responsive {
       position: fixed;
       margin-left: -15px;
-      background: linear-gradient(#e66465, #9198e5);
+      background: linear-gradient(#FFD6F9, #9198e5);
+      /* background: linear-gradient(0.5turn, #EDB5D9, #A371A1, #050D18); */
     }
     .sidebar.responsive .icon {
       position: absolute;
@@ -172,13 +177,21 @@ body {
   
   #hero:before {
     content: "";
-    background-color: #050D18;
+    background-color: #00132A;
+    /*0A1C32
+      0C203A
+      092240
+      071D37
+      011A38
+      06172C
+      00132A
+      050D18
+    */
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
   }
   
   #hero .hero-container {
@@ -193,6 +206,7 @@ body {
     font-weight: 700;
     line-height: 56px;
     color: #EDB5D9;
+    margin-left: 200px;
   }
   
   #hero p {
@@ -212,13 +226,18 @@ body {
   @media screen and (min-width: 1199px) {
     #hero {
       background-attachment: fixed;
+      display: none;
     }
   }
    
   @media screen and (max-width: 768px) {
+    #hero{
+      display: none !important;
+    }
     #hero h1 {
       font-size: 28px;
       line-height: 36px;
+      margin: 0;
     }
     #hero h2 {
       font-size: 18px;
@@ -227,6 +246,15 @@ body {
     }
     #hero p span {
         font-size: 18px;
+    }
+    .screen-v{
+      all: unset;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: block;
     }
   } 
   
@@ -273,6 +301,11 @@ body {
   
   .section-title p {
     margin-bottom: 0;
+  }
+
+  strong, b {
+    color: #789DEE;
+    /*A371A1*/
   }
 
 
