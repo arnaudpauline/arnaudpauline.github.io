@@ -182,17 +182,17 @@ body {
     background-size: cover;
     z-index: 2;
     min-width: 300px;
-
+    background-image: url(/img/photo.png);
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: none;
     background-size: cover; 
-    position: relative;
+ /* position: relative; */
   }
   
-   #hero:before {
+   /*#hero:before {
     content: "";
     background-color: #05101F;
-    /*0A1C32
+    0A1C32
       0C203A
       092240
       071D37
@@ -200,14 +200,14 @@ body {
       06172C
       00132A
       05101F
-      050D18*/
+      050D18
     
     position: absolute;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
-  } 
+  } */
   
   #hero .hero-container {
     position: relative;
@@ -238,14 +238,14 @@ body {
     border-bottom: 3px solid black;
   }
   
-   @media screen and (min-width: 1199px) {
+   @media screen and (min-width: 1700px) {
     #hero {
       background-attachment: fixed;
       display: none;
     }
   }
    
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     #hero{
       display: none !important;
     }
@@ -425,6 +425,13 @@ body {
   /*--------------------------------------------------------------
   # Projets
   --------------------------------------------------------------*/
+  /* #projets .projets-item{
+    background-color: white;
+    color: #050d18;
+
+  } */
+
+
   .portfolio .portfolio-item {
     margin-bottom: 30px;
   }
