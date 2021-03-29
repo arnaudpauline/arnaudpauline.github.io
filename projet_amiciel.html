@@ -54,10 +54,11 @@
 
         <div class="row">
             <div class="col-lg-4">
+              </br></br>
                 <img src="img/amiciel.jpg" class="img-fluid" alt="logo Amiciel">
             </div>
             <div class="col-lg-8 pt-4 pt-lg-0 content">
-                <br><h3>Présentation de l'entreprise</h3><br>
+                </br><h3>L'entreprise Amiciel</h3></br>
                 <p>
                     <strong>Amiciel</strong> est une SARL située dans la zone industrielle de Saint Quentin Fallavier en Isère.</br>Elle propose des prestations telles que : 
                 </p>
@@ -72,31 +73,63 @@
               <p>
                 Les clients premier de l'entreprise sont des crèches, écoles, centre spécialisé pour les jeunes...
                 Durant toute la durée de mon stage, j'ai été suivie par...
-              </p><br>
+              </p></br>
             </div>
             <div class="col-lg-11 content row">
-              <h3>Présentation de la mission</h3><br>
-              <p>
-                J'ai du faire évoluer un projet déjà existant sur leur application <strong>Malice</strong> (logiciel de gestion). 
-                L'objectif était de suivre la gestion des contrats de maintenance à l'aide d'un <strong>module web</strong>.</br>
-                Pour cela il fallait avoir un <strong>formulaire</strong> afin de renseigner chaque nouveau contrat. Par la suite un système de <strong>tri</strong> de tous les contrats permet d'en sélectionner certain dans le but de créer les contrats sous forme de Word et pouvoir les éditer (publipostage).</br></br>
-              </p>
-              <div class="col-lg-5">
-                <img src="img/Rslt_View_formulaire.png" class="img-fluid" alt="formulaire contrats">
-                <label for="name">Résultat de la view du formulaire</label>
+              <h3>Ma mission</h3></br>
+              <div class="col-lg-11 content">
+                <h4>Objectif</h4>
+                <p>
+                  J'ai du faire évoluer un projet déjà existant sur leur application <strong>Malice</strong> (logiciel de gestion). 
+                  L'objectif était de suivre la gestion des contrats de maintenance à l'aide d'un <strong>module web</strong>.</br>
+                  Pour cela il fallait avoir un <strong>formulaire</strong> afin de renseigner chaque nouveau contrat. Par la suite un système de <strong>tri</strong> de tous les contrats permet d'en sélectionner certain dans le but de créer les contrats sous forme de Word et pouvoir les éditer (publipostage).</br></br>
+                </p>
               </div>
-              <div class="col-lg-5">
-                <img src="img/Rslt_View_tableauetfiltres.png" class="img-fluid" alt="tableau filtré">
-                <label for="name">Résultat de la view du tableau de tri</label></br></br>
+              <div class="col-lg-11 content">
+                <h4>Démarche</h4></br>
+                <ul class="list">
+                  <li><i class="bi-calendar-minus" style="color: #A371A1;"></i> Semaine 1 : <strong>appropriation de la technologie</strong> avec de mini missons (ex: petit formulaire, création de petits évenement comme changement de couleur en fonction d'un bouton).</li>
+                  <li><i class="bi-calendar-minus" style="color: #A371A1;"></i> Semaine 2 : immersion dans le projet, utilisation de <strong>schémas pour comprendre</strong> la structure, les attentes, le fonctionnement. Début de création de la <strong>page du formulaire</strong> de création de contrats.</li>
+                  <li><i class="bi-calendar-minus" style="color: #A371A1;"></i> Semaines 3-4 : finitions du formulaire et création de la page du tableau des contrats</li>
+                  <li><i class="bi-calendar-minus" style="color: #A371A1;"></i> Semaines 5-6 : <strong>mise en place des filtres</strong> sur le tableau. Utilisation à nouveau de schémas afin <strong>d'optimiser les filtres</strong> et <strong>d'englober</strong> toutes les <strong>possibilitées</strong>.</li>
+                  <li><i class="bi-calendar-minus" style="color: #A371A1;"></i> Semaine 7 : <strong>recherches</strong> et <strong>organisation</strong> du publipostage des contrats</li>
+                </ul></br>
+              </div>
+              <div class="col-lg-11 content">
+                <h4>Réalisation</h4></br>
+                <div class="col-lg-5">
+                  <img src="img/Rslt_View_formulaire.png" class="img-fluid" alt="Formulaire des contrats" id="myImg1">
+                  <div id="myModal1" class="modal">
+                    <span class="close" style="color: #3064D4; font-size: 55px; text-shadow: none;">&times;</span>
+                    <img class="modal-content" id="imgViewF">
+                    <div id="caption1" style="margin-left: 20%;"></div>
+                  </div>
+                  <label for="name">Résultat de la view du formulaire</label>
+                </div>
+                <div class="col-lg-5">
+                  <img src="img/Rslt_View_tableauetfiltres.png" class="img-fluid" alt="Tableau filtré" id="myImg2">
+                  <div id="myModal2" class="modal">
+                    <span class="close" style="color: #3064D4; font-size: 55px; text-shadow: none;">&times;</span>
+                    <img class="modal-content" id="imgViewT">
+                    <div id="caption2" style="margin-left: 20%;"></div>
+                  </div>
+                  <label for="name">Résultat de la view du tableau de tri</label></br></br>
+                </div>
               </div>
             </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
-              <br><h3>Présentation de la technologie utilisée</h3><br>
+            <div class="col-lg-12 pt-5 pt-lg-0 content">
+              </br><h3>Présentation de la technologie utilisée</h3></br>
               <div class="row">
-                <img src="img/blazor_logo.png" class="img-fluid col-lg-2" alt="logo blazor" style="width: 18%; justify-content: right">
-                <p class="col-lg-9">
+                <img src="img/blazor_logo.png" class="img-fluid col-lg-2" alt="logo blazor" style="justify-content: right;">
+                <p class="col-lg-10">
                   <strong>Blazor</strong> est une technologie assez récente. Elle premet d'utilser du .NET afin de réaliser l'intégralité d'un site web. Le code C# est compilé dans une DLL qui sera exécuter dans le client de la machine.</br></br>
-                </p>
+                </p></br>
+              </div>
+            </div>
+            <div class="col-lg-12 pt-5 pt-lg-0 content">
+             </br></br><h3>Bilan de mon stage</h3></br>
+              <div class="row">
+                <p>Durant ces <strong>7 semaines en entrprise</strong>, j'ai pu voir ce qu'était concrètement le <strong>travail de développeur</strong> au sein d'une petite entreprise. J'ai pu finir la mission qui m'a été confiée. Cette mission utilisait une <strong>technologie que je ne connaissais pas</strong> j'ai donc dû <strong>m'y former</strong>, cela m'a permis de <strong>comprendre</strong> et <strong>réussir</strong> a faire des recherches seule sur une technologie sachant que les développeurs m'ont beaucoup aidée. Le fait d'utiliser une technologieque je ne connaissais pas et d'être sur un énorme <strong>projet déjà existant</strong> depuis plus de 15 ans était <strong>destabilisant</strong> au début.</br></p>
               </div>
             </div>
             <div class="col-lg-11 content">
