@@ -44,10 +44,15 @@ body {
   h3{
     color: #ACD0FE;
   }
+/* 
+  .id h4{
+    color: #ACD0FE;
+  }*/
 
   .apropos h4{
     color: #ACD0FE;
-  }
+  } 
+
 
 /*--------------------------------------------------
 # HEADER
@@ -76,13 +81,15 @@ body {
   }
   
   #header .profile h1 {
-    font-size: 24px;
+    font-size: x-large;
     margin: 0;
     padding: 0;
     font-weight: 600;
     -moz-text-align-last: center;
     text-align-last: center;
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+
   }
   
   #header .profile h1 a, #header .profile h1 a:hover {
@@ -106,6 +113,50 @@ body {
     }
   }
 
+  /*Phrase animé*/
+  .animation-sentence {
+    font-size: 2rem;
+    position: absolute;
+    margin-top: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Varela Round', sans-serif;
+    color: #A371A1;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0;
+    }
+    12.5% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .animation-sentence {
+    animation: pulse 12s infinite ease-in-out;
+    opacity: 0;
+  }
+  
+  .animation-sentence:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .animation-sentence:nth-child(3) {
+    animation-delay: 5s;
+  }
+  
+  .animation-sentence:nth-child(4) {
+    animation-delay: 3s;
+  }
+
+
 
 /*--------------------------------------------------
 # NAVEBAR
@@ -122,7 +173,7 @@ body {
   .sidebar a {
     display: block;
     color: #0C203A;
-    font-size: 18px;
+    font-size: large;
     padding: 16px;
     text-decoration: none;
   }
@@ -139,7 +190,7 @@ body {
   }
   
    .sidebar .icon{
-    font-size: 24px;
+    font-size: large;
     padding-right: 10px;
     display: none;
     text-decoration: none;
@@ -238,21 +289,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: baseline;
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: 'Sniglet', cursive; */
   }
   
   #hero p {
-    color: #EDB5D9;
-    margin-bottom: 50px;
-    font-size: 26px;
-    font-family: "Poppins", sans-serif;
+    font-size: x-large; /*26px;*/
+    font-family: 'Varela Round', sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+    margin: 0 0 0 0;
+    font-weight: 700;
+    line-height: 56px;
+    color: #A371A1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
   }
   
-  #hero p span {
+  /* #hero p span {
     color: #EDB5D9;
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-bottom: 3px solid black;
-  }
+  } */
   
    @media screen and (min-width: 12000px) {
     #hero {
@@ -270,14 +329,15 @@ body {
       line-height: 36px;
       margin: 0;
     }
-    #hero h2 {
-      font-size: 18px;
+    /* #hero h2 {
+      font-size: large; 18px;
       line-height: 24px;
       margin-bottom: 30px;
-    }
+    }*/
     #hero p span {
         font-size: 18px;
-    }
+    } 
+
     .screen-v{
       all: unset;
       height: 100%;
@@ -325,7 +385,7 @@ section {
   }
   
   .section-title h2 {
-    font-size: 32px;
+    font-size: xx-large;
     font-weight: bold;
     margin-bottom: 10px;
     padding-bottom: 20px;
@@ -358,40 +418,39 @@ section {
   --------------------------------------------------------------*/
   .apropos .content h3 {
     font-weight: 700;
-    font-size: 26px;
+    font-size: x-large;
     color: #EDB5D9;
   }
-  
-  .apropos .content ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .apropos .content ul li {
-    padding-bottom: 10px;
-  }
-  
-  .apropos .content ul i {
-    font-size: 20px;
+     
+  #matete{
+    width: 200px;
+    height: 200px;
+    margin: 8% 0 0 0;
+  } 
+ /* .apropos .content ul i {
+    font-size: xx-large;
     padding-right: 2px;
-    color: #fff;
+    color: red;
   }
   
   .apropos .content p:last-child {
     margin-bottom: 0;
-  }
+  } */
   
 
   /*--------------------------------------------------------------
   # Mes compétences
   --------------------------------------------------------------*/
 
+  #competences h4{
+    color: #ACD0FE;
+  }
 
 
   /*--------------------------------------------------------------
   # Parcours
   --------------------------------------------------------------*/
-  .resume .resume-title {
+  /* .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
@@ -448,7 +507,79 @@ section {
     top: 0;
     background: #BCCFFF;
     border: 2px solid #3064D4;
+  } */
+
+
+
+  .rightbox, .rightbox-2 {
+    padding: 0rem 0rem 0em 0em;
+    height: 100%;
+    /* background-color: red; */
   }
+  
+  .rb-container {
+    /* font-family: "PT Sans", sans-serif; */
+    font-family: "Open Sans", sans-serif;
+    width: 80%;
+    margin: auto;
+    display: block;
+    position: relative;
+    font-size: 18px;
+    }
+  
+  .rb-container ul.rb {
+    margin: 2.5em 0;
+    padding: 0;
+    display: inline-block;
+  }
+  
+  .rb-container ul.rb li {
+    list-style: none;
+    margin: auto;
+    /* margin-left: 1em; */
+    min-height: 50px;
+    border-left: 1px dashed #EDB5D9;
+    padding: 0 0 25px 30px;
+    position: relative;
+  }
+  
+  .rightbox-2 .rb-container ul.rb li {
+    padding: 0 0 15px 30px;
+  }
+
+  .rb-container ul.rb li:last-child {
+    border-left: 0;
+  }
+  
+  .rb-container ul.rb li::before {
+    position: absolute;
+    left: -18px;
+    top: -5px;
+    content: " ";
+    border: 8px solid rgba(172, 208, 254, 1);
+    border-radius: 500%;
+    background: #ACD0FE;
+    height: 20px;
+    width: 20px;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .rb-container ul.rb li:hover::before {
+    border-color: #3064D4;
+    transition: all 500ms ease-in-out;
+  }
+  
+  ul.rb li .timestamp {
+    color: #EDB5D9;
+    position: relative;
+    /* width: 100px; */
+    font-size: 20px;
+  }
+  
+  .item-title {
+    color: #ADA2B1;
+  }
+
 
   /*--------------------------------------------------------------
   # Projets
@@ -459,75 +590,50 @@ section {
 
   } */
 
-
-  .portfolio .portfolio-item {
-    margin-bottom: 30px;
-  }
-  
-  .portfolio .portfolio-wrap {
-    transition: 0.3s;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  /* .portfolio .portfolio-wrap::before {
-    content: "";
-    background: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    transition: all ease-in-out 0.3s;
-    z-index: 2;
-    opacity: 0;
-  } */
-  
-  .portfolio .portfolio-wrap .portfolio-links {
-    opacity: 0.5;
-    left: 0;
-    right: 0;
-    bottom: -60px;
-    z-index: 3;
-    position: absolute;
-    transition: all ease-in-out 0.3s;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .portfolio .portfolio-wrap .portfolio-links a {
-    color: #3064D4;
-    font-size: 28px;
-    text-align: center;
-    background: rgba(237 181 217 / 80%);
-    transition: 0.3s;
-    width: 50%;
-  }
-  
-  .portfolio .portfolio-wrap .portfolio-links a:hover {
-    background: rgba(48 100 212 / 75%);
-    color: #EDB5D9;
-  }
-  
-  
-  /* .portfolio .portfolio-wrap:hover::before {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.5;
-  } */
-  
-  .portfolio .portfolio-wrap:hover .portfolio-links {
-    opacity: 1;
-    bottom: 0;
-  }
   
   .apropos .row .col-lg-4 .img-fluid{
     align-items: center;
   }
+ /*tableau page Amiciel bilan*/
+  #tbl-biln thead{
+    color: #ACD0FE;
+  }
+
+  #tbl-biln tbody{
+    color: #ADA2B1;
+  }
+
+
+/*CARDS PROJETS*/
+
+#projets .card{
+  margin-top: 10px;
+  width: 300px;
+  height: 400px;
+  background-color: rgba(0,0,0,0.2);
+  border: solid;
+  border-color: #EDB5D9;
+}
+
+#projets .card h5{
+  color: #ACD0FE;
+  text-align: center;
+}
+
+#projets img{
+  width: 290px;
+  height: 150px;
+}
+
+#projets .card .card-body{
+  border-top: solid;
+  border-color: #EDB5D9;
+}
+
+/* #cardtest p{
+  text-align: center;
+} */
+
 
 
 /*--------------------------------------------------------------
@@ -538,6 +644,27 @@ section {
     cursor: pointer;
     transition: 0.3s;
   }
+
+  #myImg5{
+    width: 85%;
+    height: 85%;
+  }
+
+  #myImg10{
+    width: 85%;
+    height: 85%;
+  }
+
+  #myImg11{
+    width: 100%;
+    height: 15%;
+  }
+
+  #myImg12{
+    width: 60%;
+    height: 70%;
+  }
+
 
   #myImg:hover {opacity: 0.7;}
 
@@ -555,12 +682,27 @@ section {
     background-color: rgba(0,0,0,0.9);
   }
 
+
   /* Modal Content (image) */
   .modal-content {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 1000px;
+  }
+
+  #imgDut {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 780px;
+  }
+
+  #imgPgVot{
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 400px;
   }
 
   /* Caption of Modal Image */
@@ -621,8 +763,18 @@ section {
 
 
 /*--------------------------------------------------
+# VEILLE
+--------------------------------------------------*/
+  .link{
+    text-decoration: none;
+    color: #ADA2B1;
+  }
+
+
+/*--------------------------------------------------
 # FOOTER
 --------------------------------------------------*/
 #footer{
     background-color: #050d18;
+    z-index: 2;
 }
